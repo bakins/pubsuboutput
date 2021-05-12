@@ -1,0 +1,35 @@
+run:
+  tests: true
+linters:
+  disable-all: true
+  enable:
+  - deadcode
+  - errcheck
+  - forbidigo
+  - goconst
+  - gofumpt
+  - goimports
+  - golint
+  - gosec
+  - gosimple
+  - govet
+  - ineffassign
+  - nakedret
+  - promlinter
+  - staticcheck
+  - structcheck
+  - unused
+  - varcheck
+  - whitespace
+linters-settings:
+  forbidigo:
+    forbid:
+      - fmt.Print.*
+  govet:
+    check-shadowing: true
+    enable-all: true
+issues:
+  max-issues-per-linter: 0
+  max-same-issues: 0
+  exclude-use-default: false
+
